@@ -1,0 +1,38 @@
+/* Header */
+.header {
+    text-align: center;
+    margin: 30px;
+}
+
+/* Images */
+
+.image-one {
+    opacity: 0.7;
+    filter: blur(10px);
+    transition: 1s;
+    z-index: 0;
+}
+
+.image-one:hover {
+    cursor: pointer;
+    display: block;
+    border-radius: 10px;
+    opacity: 0.9;
+    filter: blur(0px);
+}
+
+.image-one:hover ~.hidden-text {
+    display: block;
+}
+
+/* Hidden text on images */
+
+.hidden-text {
+    color: white;
+    font-size: 50px;
+    display: none;
+    left: 34%;
+    position: absolute;
+    bottom: 5%;
+    transition: 1s;
+}
